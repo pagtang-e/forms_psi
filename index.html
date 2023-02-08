@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>częśc pierwsza</legend>
+        <label for="imie">Imie*</label>
+        <input
+          type="text"
+          name="imie"
+          id="imie"
+          required
+          placeholder="Jan"
+          required
+        />
+        <label for="haslo">Haslo*</label>
+        <input type="password" name="haslo" id="haslo" required /> <br /><br />
+
+        <label for="tryb nauki">tyb nauki* </label>
+        <input type="checkbox" name="dniPow" id="dniPow" />
+        <label for="dniPow">dni powszednie</label>
+        <input type="checkbox" name="weekend" id="weekend" checked />
+        <label for="weekend">weekend</label>
+        <input type="checkbox" name="pt" id="pt" />
+        <label for="pt">pt+weekend</label>
+
+        <br /><br />
+
+        <label for="miasto">Miasto:*</label>
+        <input type="radio" name="miasto" id="Gliwice" />
+        <label for="Gliwice">Gliwice</label>
+        <input type="radio" name="miasto" id="Bytom" checked />
+        <label for="Bytom">Bytom</label>
+        <input type="radio" name="miasto" id="Zabrze" />
+        <label for="Zabrze">Zabrze</label>
+
+        <br /><br />
+
+        <label for="typSzkoly">Typ szkoły:*</label>
+        <select name="typSzkoly" id="typSzkoly" required size="6">
+          <option value="Szkoła policealna" id="opcja1">
+            Szkoła policealna
+          </option>
+          <option value="Szkoła medyczna" id="opcja2">Szkoła medyczna</option>
+          <option value="liceum dla dorosłych" id="opcja3">
+            liceum dla dorosłych
+          </option>
+          <option value="kwalifikacyjne kursy zawodowe" id="opcja4">
+            kwalifikacyjne kursy zawodowe
+          </option>
+          <option value="technikum" id="opcja5">technikum</option>
+          <option value="Gimnazjum" id="opcja6">Gimnazjum</option>
+        </select>
+
+        <label for="uwagi">Uwagi:</label>
+        <textarea name="uwagi" id="uwagi" cols="30" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Część ostatnia</legend>
+        <label for="kierunek">Kierunek:*</label>
+        <select name="kierunek" id="kierunek" size="8">
+          <optgroup label="Szkoła policealna">
+            <option value="informatyk" id="opcaja11">informatyk</option>
+            <option value="administracja" id="opcaja12" selected>
+              administracja
+            </option>
+            <option value="logistyka" id="opcaja13">logistyka</option>
+          </optgroup>
+          <optgroup label="Kwalifikacyjne kursy zawodowe">
+            <option value="fotograf" id="opcaja14">fotograf</option>
+            <option value="kucharz" id="opcaja15">kucharz</option>
+            <option value="optyk" id="opcaja16">optyk</option>
+          </optgroup>
+        </select>
+
+        <label for="textarea">Skąd dowiedziałeś sie o naszej szkole?</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="nie możesz edytować"
+        >
+        </textarea>
+      </fieldset>
+
+      <input type="submit" value="wyślij" />
+      <input type="reset" value="czyść" />
+    </form>
+
+    <p>&copy; Mamrowicz Zofia ZSTI 2023r.</p>
+  </body>
+</html>
